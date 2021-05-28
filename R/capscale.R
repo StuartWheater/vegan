@@ -13,8 +13,19 @@
     }
     else {
         print('#0.2#')
+        print('#0.2.1#')
+        print(class(match.call()))
+        print(match.call())
+        print('#0.2.3#')
+        print(class(match.call()$data))
+        print(match.call()$data)
+        print('#0.2.3#')
+        print(class(environment(formula)))
+        print(environment(formula))
+        print('#0.3#')
         data <- eval(match.call()$data, environment(formula),
                      enclos = .GlobalEnv)
+        print('#0.4#')
     }
     print('#1#')
     print('#1.1#')
