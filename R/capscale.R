@@ -8,9 +8,11 @@
     if (!inherits(formula, "formula"))
         stop("needs a model formula")
     if (missing(data)) {
+        print('#0.1#')
         data <- parent.frame()
     }
     else {
+        print('#0.2#')
         data <- eval(match.call()$data, environment(formula),
                      enclos = .GlobalEnv)
     }
